@@ -1,0 +1,11 @@
+Method 1:
+  #亲测有效
+  终端输入如下命令： 
+  sudo modprobe -r psmouse
+  如果打开触摸板就是：
+  sudo modprobe psmouse
+-------
+Method 2:
+　　第一步：打开终端，执行   synclient touchpadoff=1  指令即可。
+　　恢复:执行  synclient touchpadoff=0   (没试过)
+原文链接附上:http://blog.csdn.net/junmuzi/article/details/38491093
