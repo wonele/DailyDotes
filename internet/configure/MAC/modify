@@ -1,0 +1,20 @@
+查看当前MAC地址：
+
+ifconfig -a
+output:
+
+eth0 Link encap:Ethernet HWaddr 00:19:48:2E:D1:2
+00:19:48:2E:D1:2即是你的MAC地址，将其复制到一个文件中保存。
+
+#2，以root权限修改MAC地址：
+
+禁用eth0
+
+ifdown eth0
+修改MAC地址为00:E0:81:5C:B4:0F
+
+ifconfig eth0 hw ether 00:E0:81:5C:B4:0F
+生效修改：
+
+ifconfig eth0 | grep HWaddr
+提示，上述修改MAC地址只是暂时的。一旦重启，系统会恢复原物理MAC地址。
