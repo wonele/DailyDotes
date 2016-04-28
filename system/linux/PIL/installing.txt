@@ -1,0 +1,7 @@
+#这玩意简直是出了名的难安装
+下载Imaging-1.1.7.tar.gz源码包
+sudo apt-get install python-dev
+cd Imaging-1.1.7/
+python setup.py build
+sudo python setup.py install
+#
